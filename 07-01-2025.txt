@@ -1,0 +1,2 @@
+- convert a number to binary
+- ascii table
