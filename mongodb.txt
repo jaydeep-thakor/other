@@ -1,0 +1,30 @@
+use firstdb
+
+
+show dbs
+
+
+show collections
+
+
+db.firstcollection.insertOne({
+	"name": Jaydeep",
+	"message": "I am Jaydeep",
+	"phone": 9999999999
+})
+
+
+db.firstcollection.insertMany([
+{
+	"name": Jaydeep1",
+	"message": "I am Jaydeep1",
+	"phone": 9999999999
+},
+{
+	"name": Jaydeep2",
+	"message": "I am Jaydeep2",
+	"phone": 9999999999
+}
+])
+
+
