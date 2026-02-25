@@ -1,0 +1,38 @@
+artist : {
+    type: mongoose.Schema.Types.ObjectId,
+    ref: "user"
+}
+
+craeteMusic
+
+see if there is a token
+token = req.cookies.token
+
+if !token = 401 unauthorized
+
+decoded jwt.verify(token, secret)
+
+if(decoded .roile !== "artist") 403 forbidden you do not have access to create an music
+
+{title} = req.body
+file = req.file
+
+setup imagekit
+
+uploadFile(file.buffer.toString("base64"))
+
+create song
+
+give success response
+
+
+
+
+setup multer in music routes
+
+multer = multer({
+    storage: multer.memoryStorage()
+})
+
+uplolad.single("music")
+
