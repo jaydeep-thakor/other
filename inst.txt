@@ -1,0 +1,55 @@
+1 - test all auth apis
+
+2- create food modal
+name
+video
+description
+foodPartner : {
+ type: mongoose.Schema.Types.ObjectId,
+ ref: "foodpartner(foodpartner-modal-schema name)"
+}
+
+3 - create a food route
+
+4 - create middleware
+ import foodPartnerModal
+	jwt
+ check token is available
+ req.cookies.token
+ if not res401(please login first)
+
+try
+
+jwt.verify
+find by id in foodpartner modal
+res.foodPartner = foodPartner(creates new property)
+
+ catch
+	401 invalid token
+
+5 - create food controller
+import middleware
+(createFood)
+
+6 - set route
+("/", middleware, createfoodcontroller)
+
+7 - log(req.foodPartner)
+res.send(food item created)
+
+8 - install multer
+const upload = multer({
+storage: multer.memoryStorage()
+})
+
+/, middleware upload.single('video')(key name where video is uploaded)
+
+9 - req.body in controller
+req.file
+
+
+
+
+
+
+

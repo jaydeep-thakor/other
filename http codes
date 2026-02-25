@@ -1,0 +1,5 @@
+200 OK - Success (login, logout, fetch data)
+201 Created - New resource created
+401 Unauthorized - Invalid credentials/not authenticated
+409 Conflict - Resource already exists
+500 Internal Server Error - Server error
